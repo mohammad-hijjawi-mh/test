@@ -1,0 +1,155 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: url('../img/2.jpg');
+}
+
+.bordersinup{
+    /* border: solid #ffffff 2px ;*/
+    /*background-color: white;*/
+   width: 300px;
+      height: 300px;
+      margin: auto;
+      position: absolute;
+      top :0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      border-radius: 0.7cm;
+}
+
+a{
+    text-decoration: none;
+}
+
+#sign_in{
+    width: 100px;
+    height: 30px;
+    margin-left: 1265px;
+    background-color: #f5deb300;
+}
+
+#FirstName{
+    width: 125px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 0.8cm ;
+    margin-top: 8px;
+    background-color: #f5deb300;
+}
+
+#LastName{
+    width: 125px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 0.8cm ;
+    margin-top: 8px;
+    background-color: #f5deb300;
+}
+
+#email{
+    width: 270px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 0.8cm ;
+    margin-top: 8px;
+    background-color: #f5deb300;
+}
+
+#password{
+    width: 270px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 0.8cm ;
+    margin-top: 8px;
+    background-color:#f5deb300;
+}
+
+.img1{
+    padding: 2px;
+    display: flex;
+}
+
+.img2{
+    padding:2px ;
+    display: flex;
+}
+
+.img3{
+    padding:2px ;
+    display: flex;
+}
+
+.img4{
+    padding:2px ;
+    display: flex;
+}
+
+#facebook{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#google{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#twitter{
+    width: 20px;
+    height: 20px;
+    margin-top: 11px;
+    margin-left: 20px;
+}
+
+#Instagram{
+    width: 20px;
+    height: 20px;
+    margin-top: 11px;
+    margin-left: 20px;
+}
+
+#imgfacebook{
+    width: 35px;
+    height: 35px;
+    margin: -12px;
+}
+
+#imggoogle{
+    width: 35px;
+    height: 35px;
+    margin: -12px;
+}
+
+#imgtwitter{
+    width: 35px;
+    height: 35px;
+    margin: -12px;
+}
+
+#imgInstagram{
+    width: 35px;
+    height: 35px;
+    margin: -12px;
+}
+
+#btn{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin-left:80px;
+    margin-top: 8px;
+    background-color: #f5deb300;
+}
+
+.other_signup{
+    display: flex;
+}

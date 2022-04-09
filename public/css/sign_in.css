@@ -1,0 +1,62 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: url('../img/2.jpg');
+}
+
+.bordersin_in{
+     width: 300px;
+     height: 200px;
+     margin: auto;
+     position: absolute;
+     top :0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     border-radius: 0.7cm;
+}
+
+h5{
+    height: 0px;
+}
+
+#email{
+    width: 270px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 0.8cm ;
+    margin-top: 8px;
+    background-color: #f5deb300;
+
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+
+}
+#password{
+    width: 270px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 0.8cm ;
+    margin-top: 8px;
+    background-color:#f5deb300;
+
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+#btn{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin-left:80px;
+    margin-top: 8px;
+    background-color: #f5deb300;
+}

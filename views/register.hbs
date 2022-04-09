@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="/css/sign_up.css">
+    </head>
+
+    <body>
+        <div class="main" >
+            {{#if errors}}
+            {{#each errors}}
+            <div class="card-panel red lighten-2">{{msg}}</div>
+            {{/each}}
+            {{/if}}
+            <button type="signin" id="sign_in"> <a href="/login"> sign in </a></button>
+            <div class="bordersinup">
+                <form action="/users/register" method="post" id="btn">
+                   {{!-- <div class="other_signup">
+                    <input type="text" id="FirstName" placeholder="First Name">
+                    <input type="text" id="LastName" placeholder="Last Name">
+                   </div>  --}}
+                  
+                  <input type="email" name="email" placeholder="email" id="email">
+                  <input type="password" name="password" placeholder="password" id="password" >
+                  <input type="password" name="password2" placeholder="confirm password" id="password" >
+                  <button type="submit" id="btn"> submit </button>
+                </form>
+                
+                <div class="other_signup">
+                    <div class="img1" >
+                        <button type="facebook" id="facebook">
+                            <a href=" https://www.facebook.com/ "><img id="imgfacebook" src="/img/Facebook.png"></a>
+                        </button>
+                    </div>
+        
+                    <div class="img2" >
+                        <button type="google" id="google">
+                            <a href="https://accounts.google.com/ "><img id="imggoogle" src="/img/Google_Gmail.png"></a>
+                        </button>
+                    </div>
+
+                    <div class="img3" >
+                        <button type="twitter" id="twitter">
+                            <a href="https://twitter.com/i/flow/login "><img id="imgtwitter" src="/img/twitter.png"></a>
+                        </button>
+                    </div>
+
+                    <div class="img4" >
+                        <button type="Instagram" id="Instagram">
+                            <a href="https://twitter.com/i/flow/login "><img id="imgInstagram" src="/img/Instagram.png"></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
