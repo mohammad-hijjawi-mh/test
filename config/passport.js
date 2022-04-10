@@ -19,7 +19,7 @@ passport.use(
             console.log("user not found");
             return done(null, false, { message: " User was not found" });
           } else {
-            console.log("user  found");
+            console.log("user found");
             bcrypt.compare(password, user.password, (err, validPassword) => {
               if (err) throw err;
               if (validPassword) {
@@ -42,7 +42,7 @@ passport.use(
 );
 
 passport.serializeUser(function(user, done) {
-  console.log(" serl started");
+  console.log("serl started");
   done(null, user.id);
 });
 

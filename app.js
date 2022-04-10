@@ -6,13 +6,12 @@ const port = 5000;
 const bodyParser = require("body-parser"); 
 const session = require('express-session');
 const flash = require('connect-flash');
-
+const passport = require('passport');
 var exphbs = require("express-handlebars");
 const { engine } = require('express-handlebars');
 const User = require('./models/User');
 const { connect } = require("http2");
 
-//app.engine('handlebars', engine({ extname: '.hbs', defaultLayout: "main"}));
 app.set('view engine', 'hbs');
 
 app.use(session({
@@ -20,7 +19,24 @@ app.use(session({
     resave: true,
     saveUninitialized:true
 }));
+
+//include passport
+require("./config/passport");
+//add passport
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(flash());
+
+app.use((req, res, next) => {
+    res.locals.successMessage = req.flash("successMessage");
+    res.locals.errorMessage = req.flash("errorMessage");
+    res.locals.error = req.flash("error");
+
+    if(req.user){
+        res.locals.user = req.user;
+    }
+    next();
+});
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());

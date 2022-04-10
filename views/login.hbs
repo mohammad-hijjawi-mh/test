@@ -8,18 +8,37 @@
     <body>
         
         <div class="main" >
+
+            {{#if successMessage}}
+            <div class="card-panel green lighten-2">{{successMessage}}</div>
+
+            {{/if}}
+
+            {{#if errorMessage}}
+            <div class="card-panel red lighten-2">{{errorMessage}}</div>
+
+            {{/if}}
+
+
+            {{#if error}}
+            <div class="card-panel red lighten-2">{{error}}</div>
+
+            {{/if}}
+
             <div class="bordersin_in" >
+                <form action="/users/login" method="post">
                 <div>
                     <h5>  email:</h5>
-                    <input type="email" placeholder="email" id="email" >
+                    <input type="email" name="email" placeholder="email" id="email" >
                     <h5 id="Forgot_password">  password:</h5>
-                    <input type="password" placeholder="password" id="password" >
+                    <input type="password" name="password" placeholder="password" id="password" >
                     <h5><a href="/Forget_password">Forgot password</a></h5>
                     <div class="btns">
                          <button type="submit" id="btn"> submit </button>
                          <button type="button " id="btn" > <a href="/register"> sign up  </button></a>
                     </div>
                 </div>
+                </form>            
             </div>
         </div>
     </body>

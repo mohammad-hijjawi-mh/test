@@ -152,4 +152,6 @@ a{
 
 .other_signup{
     display: flex;
+    float: right;
+    padding-top: 150px;
 }
